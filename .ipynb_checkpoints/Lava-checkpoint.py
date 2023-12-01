@@ -1,4 +1,5 @@
 import numpy as np
+from scipy.special import erf
 
 
 
@@ -32,7 +33,7 @@ def density(T, rho0, beta):
 def heat_capacity(T):
     if T > 1010:
         return 1100
-    elis T<= 1010:
+    elif T<= 1010:
         return 1211-(1.12e5/T)
     
 # def conductivity(T, phi_ves = 0.5):
