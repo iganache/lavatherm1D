@@ -78,7 +78,7 @@ def flow_length():
     pass
 
 
-def radiative_flux(Tsurf, Tatm, emis_surf = 0.95):
+def radiation_flux(Tsurf, Tatm, emis_surf = 0.95):
     sigmaB = 5.670374419e-8                    ## Stefan Boltzmann constant
     q = sigmaB * emis_surf * (Tsurf**4 - Tatm**4)
     return q
@@ -87,7 +87,7 @@ def convection_flux(Tsurf, Tatm, hconv = 50):
     q = hconv * (Tsurf - Tatm)
     return q
 
-def conductive_flux():
+def conduction_flux():
     pass
 
 def flynn_flux(Tsurface):
